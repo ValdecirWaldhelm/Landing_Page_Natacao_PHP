@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 15pt Arial;
+}
+
+/* Container Principal */
+main#home{
+    min-width: 100%;
+    min-height: 600px;
+    position: relative;
+}
+
+.video{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+/* Header Menu */
+header.menu{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    z-index: 2;
+    border-bottom: 5px solid white;
+}
+
+/* Social icons*/
+.icons-social{
+    z-index: 2;
+    position: relative;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+.icons-social i{
+    text-shadow: 1px 2px black;
+    padding-right: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+/* Logo */
+.menu .logo{
+    background-image: url('../img/logo-white.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px white;
+}
+
+/* Menu Desktop */
+.desktop ul li{
+    font-size: 22px;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.desktop a{
+    text-shadow: 1px 2px black;
+    color: white;
+    text-decoration: none;
+}
+
+.desktop a:hover{
+    color: white;
+    text-shadow: 2px 2px 5px white;
+}
+
+/* Section Sobre */
+#sobre{
+    width: 100%;
+    height: auto;
+}
+
+.container-sobre,
+.container-sobre2{
+    padding: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.container-sobre{
+    flex-direction: row-reverse;
+}
+
+.sobre-imagem,
+.sobre-imagem2{
+    width: 600px;
+    height: 600px;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed
+    
+}
+
+.sobre-imagem{
+    background-image: url('../img/natacao.jpg');
+    background-size: cover;
+    background-position: 600px;
+    background-repeat: no-repeat;
+}
+
+.sobre-imagem2{
+    background-image: url('../img/container_natacao.jpg');
+    background-size: cover;
+    background-position: -500px;
+    background-repeat: no-repeat;
+}
+
+.container-text{
+    padding-left: 25px;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.container-text h1{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    padding-bottom: 25px;
+    color: #5ab9ea;
+    text-shadow: 1px 1px black;
+    
+}
+
+.container-text p{
+    font-size: 18px;
+}
+
+/* Modalidades */
+#modalidades{
+    background-color: #84ceeb;
+    width: 100%;
+    height: auto;
+
+}
+
+.container-modalidades{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.single-modalidades{
+    border: 10px solid white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.single-modalidades img{
+    width: 100%;
+}
+
+.single-modalidades h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #8860d0;
+    text-shadow: 1px 2px #c1c8e4;
+    padding: 10px;
+}
+
+.single-modalidades p{
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.single-modalidades i{
+    padding-top: 20px;
+    text-shadow: 10px 5px black;
+    font-size: 50px;
+}
+
+/* Inscrição */
+#inscricao{
+    
+}
+.formulario{
+    margin: 100px auto;
+    font: 10pt Arial;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    display: block;
+    width: 540px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font: 11pt Helvetica;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.botao{
+    width: 100%;
+    height: 40px;
+	background-color: #273747;
+	color: white;
+    margin-top: 15px;
+	box-shadow: 2px 2px 1px #aaaaaa;
+}
+
+div form{
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 400px;
+    border: 2px solid blue;
+}
+form input[type="number"],
+form input[type="text"]{
+    outline: 0;
+    border: 0;
+    width: 100%;
+    height: 40px;
+}
+form input[type="number"]::placeholder,
+form input[type="text"]::placeholder{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+input[type="submit"]{
+    outline: 0;
+    border: 0;
+    background-color: blue;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+form input[type="radio"]{
+    cursor: pointer;
+}
+
+form span{
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+
+}
+
+/* footer */
